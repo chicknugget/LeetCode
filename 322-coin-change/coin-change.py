@@ -1,7 +1,6 @@
 from collections import deque
 class Solution:
     def coinChange(self, coins: List[int], amount: int) -> int:
-        # [amount, level]
         queue = deque()
         queue.append([0,0])
         visited = set()
